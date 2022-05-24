@@ -1,0 +1,91 @@
+.background {
+   background-color: #1C1C1C;
+}
+
+.cardapio {
+    width: 940px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.cardapio li {
+    display: inline-block;
+    text-align: center;
+    color: aliceblue;
+    width: 30%;
+    vertical-align: top;
+    margin: 10px 10px;
+    padding: 30px 10px;
+    box-sizing: border-box;
+    border: 2px solid #DB3A34;
+    border-radius: 10px;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.cardapio li:hover {
+    border-color: #FFC857;
+}
+
+.cardapio li:active {
+    border-color: #6AB547;
+}
+
+.cardapio li:hover h2 {
+    font-size: larger;
+}
+
+.cardapio h2 {
+    font-size: large;
+    font-weight: bold;
+}
+
+.descricao {
+    font-size: medium;
+}
+
+.preco {
+    font-size: x-large;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.imagem_cardapio {
+    justify-items: center;
+    height: 240px;
+    width: 250px;
+}
+
+.btn_cardapio {
+    margin: 10px 5px;
+    cursor: pointer;
+    color: aliceblue;
+    background: #DB3A34;
+    border-radius: 10px;
+    font-size: larger;
+}
+
+.btn_cardapio:hover {
+    background: #FFC857;
+    color: #1C1C1C;
+    font-size: x-large;
+    transition: 1s all;
+}
+
+.btn_cardapio:active {
+    background: #6AB547;
+    color: aliceblue;
+    font-size: x-large;
+    transition: 0.5s all;
+}
+
+.pedido {
+    color: aliceblue;
+    text-align: center;
+    font-size: x-large;
+    background: #1C1C1C;
+}
+
+.checkbox {
+    margin: 20px 0;
+}

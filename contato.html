@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title> 🍔 Viking Burger 🍔</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="estilo_principal.css">
+    <link rel="stylesheet" href="estilo_contato.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <input type="checkbox" id="check">
+        <label id="icone" for="check"></label>
+        <div class="barra">
+            <nav>
+                <a href="Burger-de-outro-mundo.html">
+                    <div class="Link">Home</div>
+                </a>
+                <a href="cardapio.html">
+                    <div class="Link">Cardápio</div>
+                </a>
+                <a href="contato.html">
+                    <div class="Link">Contato</div>
+                </a>
+            </nav>
+        </div>
+        <!-- barra fixa azul horizontal -->
+
+        <nav class="menu">
+            <a href="index.html">
+            </a>
+        </nav>
+
+        <label for="menu-hamburguer">
+            <div class="mburg">
+                <span class="hamburguer"></span>
+            </div>
+        </label>
+        <div class="cabecalho">
+        </div>
+        <div class="logo_back">
+            <img class="banner_home" src="cabecalho1.png" alt="Nosso Hambúrguer">
+        </div>
+    </header>
+    <main>
+        <img src="burger1.png" class="imagem_contato" alt="Odin Burger">
+        <form name="formulario" method="get" action=".">
+            <fieldset>
+                <legend>Quer add outro Burger?</legend>
+                <select>
+                    <option>Odin Burger R$ 40,00</option>
+                    <option>Thor Burger R$ 35,00</option>
+                    <option>Loki Burger R$ 30,00</option>
+                    <option>Quero não</option>
+                </select>
+                <br><br>
+                <label for="quantidade">Quantos?<br><br><input type="number" name="quantidade"
+                    value="quantidade" id="quantidade" class="input_padrao"></label>
+            <fieldset>
+                <legend>Vai uma bebida?</legend>
+                <select>
+                    <option>Coca-cola R$ 3,50</option>
+                    <option>Sprite R$ 3,50</option>
+                    <option>Suco R$ 3,00</option>
+                    <option>Guaraná Jesus R$ 5,99</option>
+                </select>
+                <br><br>
+            <fieldset>
+                <legend>Como será a forma de pagamento?</legend>
+                <select>
+                    <option>Débito</option>
+                    <option>Crédito</option>
+                    <option>Pix (Link vai pro seu e-mail)</option>
+                    <option>Dinheiro</option>
+                </select>
+                <br><br>
+                <label for="troco">Precisa de troco?</label>
+                <input type="number" name="troco" value="troco" id="troco" class="input_padrao" placeholder="Em caso de pagamento em dinheiro">
+            </fieldset>
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" class="input_padrao" name="nome" required placeholder="Aqui vai o seu nome">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" class="input_padrao" name="e-mail" required placeholder="exemplo@email.com">
+            <label for="celular">Telefone</label>
+            <input type="tel" id="celular" class="input_padrao" name="celular" required placeholder="(XX) X XXXX-XXXX">
+            <label for="cep">CEP</label>
+            <input type="number" id="cep" class="input_padrao" name="cep" required placeholder="XXXXX-XXX" onblur="buscaCep()">
+            <label for="rua">Rua</label>
+            <input type="text" id="rua" class="input_padrao" name="rua" required placeholder="Aqui vai a sua rua">
+            <label for="número">Número</label>
+            <input type="number" id="numero" class="endereço" name="numero" required placeholder="Número da sua casa">
+            <label for="bairro">Bairro</label>
+            <input type="text" id="bairro" class="endereço" name="bairro" required placeholder="Seu bairro">
+            <label for="observacao">Observações</label>
+            <textarea cols="70" rows="10" id="observacao" class="input_padrao"
+                placeholder="Se você quiser adicionar alguma observação sobre seu pedido, esse é o lugar!"></textarea>
+            <button class="btn_cardapio" onclick="pedidoFeito()">Tudo certin 👍</button>
+        </form>
+    </main>
+    <script src="pedidoFeito.js"></script>
+    <script src="buscaCep.js"></script>
+</body>
+
+</html>

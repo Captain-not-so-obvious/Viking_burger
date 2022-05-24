@@ -1,0 +1,56 @@
+form {
+    padding: 40px;
+    background: linear-gradient(#1C1C1C, #FFC100);
+}
+
+form label, form legend {
+    display: block;
+    font-size: medium;
+    margin: 0 0 10px;
+    color: aliceblue;
+}
+
+.input_padrao {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.endereço {
+    display: flex;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 30%;
+}
+
+.imagem_contato {
+    float: right;
+    padding: 200px 30px;
+    margin: 10px 5px;
+    height: 250px;
+    width: 200px;
+}
+
+.btn_cardapio {
+    color: aliceblue;
+    background: #FE5F55;
+    border-radius: 5px;
+    text-transform: uppercase;
+    box-shadow: 6px 6px 6px 0 #1C1C1C;
+    cursor: pointer;
+    width: 40%;
+    padding: 15px 0;
+    font-size: large;
+    font-weight: bold;
+    border: none;
+    transition: 1s all;
+}
+
+.btn_cardapio:hover {
+    color: #1C1C1C;
+    background: #88D18A;
+    font-size: larger;
+    width: 45%;
+}
+

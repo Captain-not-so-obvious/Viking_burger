@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title> 🍔 Viking Burger 🍔</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="estilo_principal.css">
+    <link rel="stylesheet" href="estilo_cardapio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <input type="checkbox" id="check">
+        <label id="icone" for="check"></label>
+        <div class="barra">
+            <nav>
+                <a href="Burger-de-outro-mundo.html">
+                    <div class="Link">Home</div>
+                </a>
+                <a href="cardapio.html">
+                    <div class="Link">Cardápio</div>
+                </a>
+            </nav>
+        </div>
+
+        <nav class="menu">
+            <a href="index.html">
+            </a>
+        </nav>
+
+        <label for="menu-hamburguer">
+            <div class="mburg">
+                <span class="hamburguer"></span>
+            </div>
+        </label>
+        <div class="cabecalho">
+    </header>
+    <div class="logo_back">
+        <a href="Burger-de-outro-mundo.html">
+            <img class="banner_home" src="cabecalho1.png" alt="Nosso Hambúrguer">
+        </a>
+    </div>
+    <main>
+        <section class="background">
+            <ul class="cardapio">
+                <li>
+                    <h2>Odin Burger</h2>
+                    <img src="burger1.png" class="imagem_cardapio">
+                    <p class="descricao">Feito com pão de hambúrguer americano, 🍔 4 fatias de queijo cheddar derretido
+                        na
+                        chapa, 🧀 dois bifes artesanais feitos com patinho 🥩 e recheadas com molho barbecue 200g cada,
+                        cebola roxa 🧅 e alface. Tudo no ponto pra você! 😋</p>
+                    <p class="preco">R$ 40,00</p>
+                    <button class="btn_cardapio" onclick="escolheuOdin()">Quero esse!</button>
+                </li>
+                <li>
+                    <h2>Thor Burger</h2>
+                    <img src="burger2.png" class="imagem_cardapio">
+                    <p class="descricao">Feito com pão italiano, 🤌 uma generosa camada de maionese temperada da casa,
+                        🏠
+                        alface, tomate, 🍅 bacon, 🥓 3 fatias de queijo cheddar no capricho, 🧀 3 bifes artesanais de
+                        alcatra 100g cada. 🥩 O burgão dos Vikings! 💪</p>
+                    <p class="preco">R$ 35,00</p>
+                    <button class="btn_cardapio" onclick="escolheuThor()">Quero esse!</button>
+                </li>
+                <li>
+                    <h2>Loki Burger</h2>
+                    <img src="burger3.png" class="imagem_cardapio">
+                    <p class="descricao">Feito com pão brioche, 🥖 3 camadas de bacon, 🥓 3 camadas de cheddar, 🧀 2
+                        bifes artesanais
+                        feitos com coxão duro 100g cada 🥩 e uma leve camada de onion rings. Tudo no padrão que só o que
+                        só a
+                        Viking Burger tem!</p>
+                    <p class="preco">R$ 30,00</p>
+                    <button class="btn_cardapio" onclick="escolheuLoki()">Quero esse!</button>
+                </li>
+            </ul>
+        </section>
+        <div id="texto" class="texto">
+            <p id="pedido" class="pedido"></p>
+        </div>
+    </main>
+    <footer>
+        <p class="copyright">&copy; Copyright Viking Burger 2022</p>
+    </footer>
+</body>
+<script src="cardapio.js"></script>
+
+</html>
