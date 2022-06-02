@@ -1,30 +1,201 @@
+/* cabeçalho fixo */
+.menu {
+  background: #011936;
+  width: 100%;
+  height: 37px;
+  padding: 30px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+/* menu retrail lateral */
 body {
-    font-family: 'Roboto', sans-serif;
+  background-color: #011936;
+  font-family: 'Open Sans', sans-serif;
+  overflow-X: hidden;
+}
+
+#check {
+  display: none;
+}
+
+#icone {
+  cursor: pointer;
+  padding: 32px;
+  position: fixed;
+  z-index: 1;
+
+  border: 1px #ffffff solid;
+  top: 20px;
+  left: 20px;
+}
+
+.barra {
+  background-color: #011936;
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  transition: all .2s linear;
+  left: -250px;
+
+}
+
+nav {
+  width: 100%;
+  position: absolute;
+  top: 80px;
+}
+
+
+nav a {
+  text-decoration: none;
+
+}
+
+.Link {
+  background-color: #011936;
+  padding: 20px;
+  font-family: 'Gotham';
+  font-size: 12pt;
+  transition: all .3s linear;
+  color: #FFFFFF;
+  border-bottom: 1px solid #C1EEFF;
+  opacity: 0;
+
+
+
+
+}
+
+.Link:hover {
+  background-color: #2E86AB;
+  color: #FFFFFF;
+
+}
+
+#check:checked~.barra {
+  transform: translateX(250px);
+}
+
+#check:checked~.barra nav a .Link {
+  opacity: 1;
+  transition-delay: .3s;
+}
+
+#banner1 {
+  padding-top: 97px;
+  width: 100%;
+
+}
+
+
+
+.mburg {
+
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  top: 25px;
+  left: 25px;
+}
+
+.hamburguer {
+  position: relative;
+  display: block;
+  background: #C1EEFF;
+  width: 30px;
+  height: 3px;
+  top: 29px;
+  left: 15px;
+  transition: .5s ease-in-out;
+}
+
+.hamburguer:before,
+.hamburguer:after {
+  background: #C1EEFF;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: .5s ease-in-out;
+}
+
+.hamburguer:before {
+  top: -10px;
+}
+
+.hamburguer:after {
+  bottom: -10px;
+}
+
+input {
+  display: none;
+}
+
+input:checked~label .hamburguer {
+  transform: rotate(45deg);
+}
+
+input:checked~label .hamburguer:before {
+  transform: rotate(90deg);
+  top: 0;
+}
+
+input:checked~label .hamburguer:after {
+  transform: rotate(90deg);
+  bottom: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
 }
 
 .cabecalho {
-    height: 150px;
+    height: 75px;
 }
 
 
 header {
-    background: #1C1C1C;
-    padding: 10px 0;
+    background: #011936;
 }
 
 .banner_home {
-  background: #1C1C1C;
-  width: 33%;
-  height: 350px;
+  background: #011936;
+  float:inline-start;
+  height: 250px;
+  width: 20rem;
   cursor: pointer;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .logo_back {
-    background: url("https://i.gifer.com/Cu4E.gif");
+    background: url("banner1.jpg");
+    margin-top: 20px;
 }
+
+/* media do cabeçalho */
+
+@media screen and (min-width: 0) {
+    .logo_back {
+      width: 100%;
+    }
+    .banner_home {
+      width:fit-content;
+    }
+  }
+
+  /* fazer aqui amanhã */
 
 .home {
     padding: 15px 0px;
@@ -93,166 +264,6 @@ footer {
     margin: 20px 0;
 }
 
-/* CSS home  */
-
-/* cabeçalho fixo */
-.menu {
-    background: #1C1C1C;
-    width: 100%;
-    height: 37px;
-    padding: 30px 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-  }
-  
-  #logo {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%)
-  }
-  
-  /* menu retrail lateral */
-  body {
-    background-color: #ffffff;
-    font-family: 'Just Another Hand', cursive;
-    overflow-X: hidden;
-  }
-  
-  #check {
-    display: none;
-  }
-  
-  #icone {
-    cursor: pointer;
-    padding: 32px;
-    position: fixed;
-    z-index: 1;
-  
-    border: 1px #fff solid;
-    top: 20px;
-    left: 20px;
-  }
-  
-  .barra {
-    background-color: #1C1C1C;
-    height: 100%;
-    width: 250px;
-    position: fixed;
-    transition: all .2s linear;
-    left: -250px;
-  
-  }
-  
-  nav {
-    width: 100%;
-    position: absolute;
-    top: 80px;
-  }
-  
-  
-  nav a {
-    text-decoration: none;
-  
-  }
-  
-  .Link {
-    background-color: #1C1C1C;
-    padding: 20px;
-    font-family: 'Gotham';
-    font-size: 12pt;
-    transition: all .3s linear;
-    color: #ffffff;
-    border-bottom: 1px solid #1C1C1C;
-    opacity: 0;
-  
-  
-  
-  
-  }
-  
-  .Link:hover {
-    background-color: #076992;
-    color: #ffffff;
-  
-  }
-  
-  #check:checked~.barra {
-    transform: translateX(250px);
-  }
-  
-  #check:checked~.barra nav a .Link {
-    opacity: 1;
-    transition-delay: .3s;
-  }
-  
-  #banner1 {
-    padding-top: 97px;
-    width: 100%;
-  
-  }
-  
-  
-  
-  .mburg {
-  
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    position: fixed;
-    top: 25px;
-    left: 25px;
-  }
-  
-  .hamburguer {
-    position: relative;
-    display: block;
-    background: #fff;
-    width: 30px;
-    height: 3px;
-    top: 29px;
-    left: 15px;
-    transition: .5s ease-in-out;
-  }
-  
-  .hamburguer:before,
-  .hamburguer:after {
-    background: #fff;
-    content: '';
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    transition: .5s ease-in-out;
-  }
-  
-  .hamburguer:before {
-    top: -10px;
-  }
-  
-  .hamburguer:after {
-    bottom: -10px;
-  }
-  
-  input {
-    display: none;
-  }
-  
-  input:checked~label .hamburguer {
-    transform: rotate(45deg);
-  }
-  
-  input:checked~label .hamburguer:before {
-    transform: rotate(90deg);
-    top: 0;
-  }
-  
-  input:checked~label .hamburguer:after {
-    transform: rotate(90deg);
-    bottom: 0;
-  }
 
 .titulo_video {
   text-align: center;
