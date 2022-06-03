@@ -174,7 +174,6 @@ header {
   background: #011936;
   float:inline-start;
   height: 250px;
-  width: 20rem;
   cursor: pointer;
   display: block;
 }
@@ -191,15 +190,13 @@ header {
       width: 100%;
     }
     .banner_home {
-      width:fit-content;
+      width: 15rem;
     }
   }
 
-  /* fazer aqui amanhã */
-
 .home {
     padding: 15px 0px;
-    background: #1C1C1C;
+    background: linear-gradient(#011936, #2E86AB);
     width: 100%;
     margin: 0 auto;
 }
@@ -215,32 +212,28 @@ header {
 
 .copy_home {
     text-align: center;
-    color: aliceblue;
+    color: #FFFFFF;
     margin-bottom: 20px;
+    line-height: 1.5rem;
 }
 
-.section_mapa {
-    padding: 9px 0;
-    background: linear-gradient(#1C1C1C, #545E75);
-}
+/* media da copy */
 
-.titulo_mapa {
+@media screen and (min-width: 0) {
+  .copy_home {
+    margin-left: 2rem;
+    margin-left: 2rem;
     text-align: center;
-    font-size:x-large;
-    color: yellow;
-    text-transform: uppercase;
-}
+  }
 
-.subtitulo_mapa {
+  .titulo_home {
+    margin-left: 2rem;
+    margin-right: 4rem;
     text-align: center;
-    color: aliceblue;
-    margin-bottom: 30px;
+  }
 }
 
-.mapa {
-    width: 940px;
-    margin: 0px auto;
-}
+/* fazer aqui amanhã */
 
 .section_video {
     padding: 50px 0px;
