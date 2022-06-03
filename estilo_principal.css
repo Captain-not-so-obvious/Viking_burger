@@ -255,6 +255,12 @@ header {
     margin: auto;
 }
 
+@media screen and (min-width: 0) {
+  .video {
+    width: auto;
+  }
+}
+
 footer {
     text-align: left;
     background: linear-gradient(#011936, #2E86AB);
