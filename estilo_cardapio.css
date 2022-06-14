@@ -1,8 +1,11 @@
+/* fundo da página */
 .background {
    background-color: linear-gradient(#011936, #2E86AB);;
    display: flex;
    align-items: stretch;
 }
+
+/* cardápio */
 
 .cardapio {
     width: 94vw;
@@ -51,6 +54,17 @@
     color: #FFC857;
 }
 
+@media screen and (min-width: 0) {
+    .cardapio li {
+        flex-wrap: wrap;
+        display: flex;
+        align-items: center;
+        margin: auto;
+        margin-bottom: 10px;
+        width: fit-content;
+    }
+}
+
 .descricao {
     font-size: medium;
     line-height: 20px;
@@ -95,6 +109,8 @@
     font-size: x-large;
     transition: 0.5s all;
 }
+
+/* texto do JS */
 
 .pedido {
     color: aliceblue;
