@@ -1,124 +1,129 @@
-/* fundo da página */
-.background {
-   background-color: linear-gradient(#011936, #2E86AB);;
-   display: flex;
-   align-items: stretch;
+.cabecalhoPrincipal .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-/* cardápio */
+.cabecalhoPrincipal-nav {
+    display: flex;
+} 
 
-.cardapio {
-    width: 94vw;
-    margin: auto;
-    padding: 30px 0;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-    align-items: stretch;
-    justify-items: center;
+.rodapePrincipal-patrocinadores .container {
+    display: flex;
+    justify-content: space-between;
 }
 
-.cardapio li {
-    flex-wrap: nowrap;
-    display: inline-flex;
+.rodapePrincipal-patrocinadores-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+    margin-right: 5%;
+}
+
+.rodapePrincipal-contatoForm {
+    width: 25%;
+}
+
+.rodapePrincipal-contatoForm-fieldset {
+    display: flex;
+}
+
+.rodapePrincipal-navMap-list {
+    display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    height: 260px;
+}
+
+.conteudoPrincipal-cursos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.conteudoPrincipal-cursos-link {
+    width: 23%;
+    margin: 1%;
+}
+
+.conteudoPrincipal-cursos-link:nth-child(4n) {
+    margin-right: 0;
+}
+
+.conteudoPrincipal-cursos-link:nth-child(4n +1) {
+    margin-left: 0;   
+}
+
+.videoSobre .container {
+    display: flex;
+}
+
+.videoSobre-sobre {
     text-align: center;
-    color: aliceblue;
-    width: 30%;
-    vertical-align: top;
-    margin: 10px 10px;
-    padding: 30px 10px;
-    box-sizing: border-box;
-    border: 2px solid #2E86AB;
-    border-radius: 10px;
-    justify-content: space-evenly;
-    cursor: pointer;
-    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
-.cardapio li:hover {
-    border-color: #FFC857;
+.videoSobre-sobre-list {
+    flex-grow: 1;
 }
 
-.cardapio li:active {
-    border-color: #6AB547;
+.videoSobre-video {
+    flex-grow: 1;
+    flex-shrink: 2;
 }
 
-.cardapio li:hover h2 {
-    font-size: larger;
-}
-
-.cardapio h2 {
-    font-size: large;
-    font-weight: bold;
-    color: #FFC857;
-}
-
-@media screen and (min-width: 0) {
-    .cardapio li {
-        flex-wrap: wrap;
-        display: flex;
-        align-items: center;
-        margin: auto;
-        margin-bottom: 10px;
-        width: fit-content;
+@media(max-width: 768px) {
+    .cabecalhoPrincipal-nav {
+        flex-direction: column;
     }
-}
 
-.descricao {
-    font-size: medium;
-    line-height: 20px;
-}
+    .cabecalhoPrincipal .container {
+        flex-direction: column;
+        align-items: initial;
+        text-align: center;
+    }
 
-.preco {
-    font-size: x-large;
-    font-weight: bold;
-    margin-top: 10px;
-    color: #FFC857;
-}
+    .conteudoPrincipal-cursos {
+        flex-direction: column;
+    }
 
-.imagem_cardapio {
-    display: absolute;
-    justify-content: space-evenly;
-    justify-items: center;
-    height: 30vh;
-    width: 25vw;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
+    .conteudoPrincipal-cursos-link {
+        width: 100%;
+    }
 
-.btn_cardapio {
-    margin: 10px 5px;
-    cursor: pointer;
-    color: aliceblue;
-    background: #2E86AB;
-    border-radius: 10px;
-    font-size: larger;
-}
+    .rodapePrincipal-navMap-list {
+        height: auto;
+    }
 
-.btn_cardapio:hover {
-    background: #FFC857;
-    color: #1C1C1C;
-    font-size: x-large;
-    transition: 1s all;
-}
+    .rodapePrincipal-patrocinadores .container {
+        flex-direction: column;
+        align-items: center;
+    }
 
-.btn_cardapio:active {
-    background: #6AB547;
-    color: aliceblue;
-    font-size: x-large;
-    transition: 0.5s all;
-}
+    .rodapePrincipal-patrocinadores-list {
+        margin: 0;
+        width: 100%;
+    }
 
-/* texto do JS */
+    .rodapePrincipal-contatoForm {
+        width: 100%;
+    }
 
-.pedido {
-    color: aliceblue;
-    text-align: center;
-    font-size: x-large;
-    background: #1C1C1C;
-}
+    .rodapePrincipal-contatoForm-fieldset {
+        justify-content: center;
+    }
 
-.checkbox {
-    margin: 20px 0;
+    .cabecalhoPrincipal-nav-link-app {
+        order: -1;
+    }
+
+    .videoSobre .container {
+        flex-direction: column;
+    }
+
+    .videoSobre-video {
+        margin: 0 auto;
+    }
 }
